@@ -1,0 +1,114 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "name": "Ragnarok",
+      "categoryId": 1,
+      "rating": "8.0",
+      "imageUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1LRLLWGvs5sZdTzuMqLEahb88Pc.jpg",
+      "overview": "Kirliliğin zehirlediği ve eriyen buzulların sarstığı bir Norveç kasabası, kıyameti yoğun biçimde hissetmektedir. Kadim bir kötülüğü alt etmek için bir efsane gereklidir."
+    },
+    {
+      "id": "2",
+      "name": "Five Feet Apart",
+      "categoryId": 3,
+      "rating": "8.4",
+      "imageUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/kreTuJBkUjVWePRfhHZuYfhNE1T.jpg",
+      "overview": "İki hasta gencin hastanede yollarının kesişmesi ile değişen yaşamlarını konu ediyor. Stella Grant, 17 yaşında olan bir genç kızdır. Bilgisayarına bağlı bir hayat süren Stella, yaşıtları gibi gezip dolaşmak yerine zamanını çoğunu hastanede geçirmek zorundadır. Kistik fibrozis hastası olan genç kız hayatını rutinler, sınırlamalar ve kendi kendini kontrol etmekle geçirir. Fakat genç kızın hayatı Will Newman ile tanışmasıyla bambaşka bir hal alır. Birbirlerinden etkilenmeye başlayan gençlerin önünde büyük bir engel vardır. Will de Stella gibi hastadır ve hastalıkları nedeniyle hayatlarına konulan sınırlamalar aralarına mesafe koymalarını gerektirir. Ancak onlar birlikte vakit geçirmeye devam ettikçe sınırlamaların dışına çıkmaya başlarlar."
+    },
+    {
+      "id": "3",
+      "name": "The Walking Dead",
+      "categoryId": 5,
+      "rating": "8.1",
+      "imageUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rqeYMLryjcawh2JeRpCVUDXYM5b.jpg",
+      "overview": "Zombi kıyametinin ardından hayatta kalanlar, birlikte verdikleri ölüm kalım mücadelesinde insanlığa karşı duydukları umuda tutunur."
+    },
+    {
+      "id": "4",
+      "name": "Avas",
+      "categoryId": 2,
+      "rating": "6.0",
+      "imageUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cvbyZ6qobXhStLOc7xQWQLTydQC.jpg",
+      "overview": "Güneş şemsiyeleriyle bezeli bir sahilde çocuklar oynuyor. Suyun sesi, gökyüzünün maviliği ve güneşin sıcaklığı hâkim. Bütün bu kalabalığın ortasında uyuyan bir çocuk Ava. Henüz 13 yaşında. Ruhu uyanıyor ancak gözleri, bir hastalık nedeniyle kapanmak üzere. Genç kızlığına adım adım yaklaşırken, önünde bekleyen sorunlarla baş edebilmek için kendince yöntemler arıyor. Prömiyerini yaptığı Cannes Eleştirmenler Haftası bölümünden ödülle dönen Ava, genç bir kızın büyüme hikâyesini girift bir anlatı üzerinden kuruyor ve dört başı mamur bir sinema duygusu yaratıyor. Yönettiği ilk uzun metrajlı filminde Léa Mysius, oldukça kompleks, görsel olarak çok maharetli bir karakter portresi çiziyor."
+    },
+    {
+      "id": "5",
+      "name": "Extraction",
+      "categoryId": 1,
+      "rating": "7.4",
+      "imageUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/m0zlqWkZenD8kWCkomKQZADChd0.jpg",
+      "overview": "Korkusuz ve kanunsuz bir paralı asker olan Tyler Rake, hapishanede yatmakta olan uluslararası bir suç baronunun kaçırılan oğlunu kurtarmak için bir göreve dâhil olur. Ancak silah ve uyuşturucu kaçakçılarının karanlık yeraltı dünyasında, zaten ölümcül olan bu görev imkânsıza yakın bir hâl alır ve bu durum, hem Rake’in hem de çocuğun hayatını sonsuza dek değiştirir."
+    },
+    {
+      "id": "6",
+      "name": "Rick and Morty",
+      "categoryId": 2,
+      "rating": "8.2",
+      "imageUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8kOWDBK6XlPUzckuHDo3wwVRFwt.jpg",
+      "overview": "Çılgın bilim insanı Profesör Rick ve torunu Morty’nin boyutlar arası tuhaf ve tehlikeli yolculuklarını konu alan yetişkinlere yönelik çizgi dizi."
+    },
+    {
+      "id": "7",
+      "name": "See",
+      "categoryId": 4,
+      "rating": "8.0",
+      "imageUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/g3JsScc7mQCfc3e5e5rXwu7xVVP.jpg",
+      "overview": "See, günümüzden uzak bir gelecekte geçiyor. Dizide, görme yetisini yitiren insanlığın , hayatta kalmak için yeni yollar aramasını konu ediniyor. Ne var ki yeni hayata gelen ikiz bebeklerin görme yetisiyle doğması işleri karıştırıyor. Dizinin başrolünü Game of Thrones’ta canlandırdığı Kahl Drogo karakteri ile dikkatleri çeken Jason Momoa üstleniyor. Momoa’nın korkusuz savaşçı Baba Voss rolünü üstlendiği See’nin senaryosunu Peaky Blinders’ın yaratıcısı Steven Knight ile Açlık Oyunları serisinin son üç filminin yönetmen koltuğunda oturan Francis Lawrence birlikte kaleme alıyor. 10 bölümden oluşan See’nin yürütücü yapımcılığını Knight, Lawrence, Peter Chernin, Jenno Topping ve Kristen Campo üstleniyor."
+    },
+    {
+      "id": "8",
+      "name": "Koruyucu",
+      "categoryId": 1,
+      "rating": "6.7",
+      "overview": "Sam Childers Hell’s Angel çetesinin eski bir üyesidir. Tanrının yolunu seçen ve iyi niyet elçisi olmak için Sudan'a giden Sam burada yetim çocukların barınacağı bir yetimhane inşaa eder. Yetim çocuklar kötü emelleri olan ve yetim çocukları potansiyel asker olarak gören kem gözlerin hedefidir. Sam tanrının gücü ve makineli tüfeği ile bildiğiniz rahip profiline tezat onları bu emellerden koruyacaktır.",
+      "imageUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/A9gRYTyNLGJuxHmqdGM5UxHxJtB.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Kontrol Dışında",
+      "categoryId": 4,
+      "rating": "6.4",
+      "overview": "Genç bir drone pilotu olan Harp (Damson Idris) savaş alanında aldığı kötü bir karar sonucunda Leo (Anthony Mackie) ile çalışmak için görevlendirilir. Fakat Harp bu seferki takım arkadaşı ve aynı zamanda komutanı olan Leo nun farklı bir özelliği olduğunu fark eder. Leo bir android dir. Harp ve Leo birlikte görevden göreve koşarken Harp, Leo nun göründüğünden de fazla sırrı olduğunun farkına varır, şüphelenmeye başlar ve ikileme düşer. Leo gerçekten de düşündüğü gibi bir kahraman olmayabilir mi? Harp, bir android olan komutanın planlarının derinliklerinde kaybolurken ona güvenmeli mi yoksa Leonun Harp için farklı planları mı var?",
+      "imageUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/z6B1sXkWuWG655WqVik1a4muO9f.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Sweet Tooth",
+      "categoryId": 4,
+      "rating": "8.2",
+      "overview": "Dehşet verici bir felaketin ardından dünya yerle bir olmuştur. Yarı geyik, yarı çocuk olan Gus, bir grup insan ve diğer hayvan-çocuk melezleriyle cevap arayışına çıkar.",
+      "imageUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rgMfhcrVZjuy5b7Pn0KzCRCEnMX.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Mavi Mucize",
+      "categoryId": 2,
+      "rating": "7.6",
+      "overview": "Maddi durumu sıkıntılı olsa da yetimhaneleri kurtarmak isteyen bir adam ve koruyucusu olduğu çocuklar, Tükenmiş bir tekne kaptanıyla kârlı bir balıkçılık yarışmasına katılır.",
+      "imageUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xBdP9Z0oVAx25tM2gUOtq298jxR.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Aksiyon"
+    },
+    {
+      "id": 2,
+      "categoryName": "Macera"
+    },
+    {
+      "id": 3,
+      "categoryName": "Romantik"
+    },
+    {
+      "id": 4,
+      "categoryName": "Bilim Kurgu"
+    },
+    {
+      "id": 5,
+      "categoryName": "Korku"
+    }
+  ]
+}
