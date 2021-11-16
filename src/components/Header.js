@@ -15,7 +15,9 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <Navbar color="dark" expand="md" dark container>
-      <NavbarBrand tag={Link} to="/">MovieApp</NavbarBrand>
+      <NavbarBrand tag={Link} to="/">
+        MovieApp
+      </NavbarBrand>
       <NavbarToggler onClick={function noRefCheck() {}} />
       <Collapse navbar>
         <Nav className="me-auto" navbar>
@@ -25,7 +27,9 @@ const Header = () => {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Admin</NavLink>
+            <NavLink tag={Link} to="/admin">
+              Admin
+            </NavLink>
           </NavItem>
         </Nav>
         <Form onSubmit={(e) => e.preventDefault()}>

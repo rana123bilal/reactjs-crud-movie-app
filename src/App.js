@@ -1,10 +1,12 @@
 import React from "react";
 import Header from "./components/Header";
 import { Row, Col, Container } from "reactstrap";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CategoryList from "./components/CategoryList";
 import MovieList from "./components/MovieList";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MovieDetails from "./components/MovieDetails";
+import Admin from "./components/Admin";
+import AddMovie from "./components/AddMovie";
 
 const App = () => {
   return (
@@ -26,6 +28,8 @@ const App = () => {
             }
           />
           <Route path={"/details/:id"} element={<MovieDetails />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/addmovie" element={<AddMovie />} />
         </Routes>
       </Container>
     </Router>
