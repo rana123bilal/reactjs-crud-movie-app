@@ -7,6 +7,7 @@ import {
   CardText,
   Row,
   Col,
+  Badge,
 } from "reactstrap";
 import axios from "axios";
 import { useParams } from "react-router-dom";
@@ -36,6 +37,9 @@ const MovieDetails = () => {
           <CardBody>
             <CardTitle tag="h5">{movie.name}</CardTitle>
             <CardText>{movie.overview}</CardText>
+            <h4>
+              <Badge color="dark">{movie.rating}</Badge>
+            </h4>
           </CardBody>
         </Col>
       </Row>

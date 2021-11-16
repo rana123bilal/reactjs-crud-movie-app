@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Table, Button } from "reactstrap";
 import { fetchMovies } from "../features/moviesSlice";
 import { Link } from "react-router-dom";
+import { deleteMovie } from "../features/moviesSlice";
 
 const Admin = () => {
   const movies = useSelector((state) => state.movies.movies);
@@ -42,7 +43,12 @@ const Admin = () => {
                 <Button color="success">Güncelle</Button>
               </td>
               <td>
-                <Button color="danger">Sil</Button>
+                <Button
+                  color="danger"
+                  onClick={() => dispatch(deleteMovie(m.id))}
+                >
+                  Sil
+                </Button>
               </td>
             </tr>
           ))}

@@ -8,9 +8,16 @@ export const fetchMovies = createAsyncThunk("movies/fetchMovies", async () => {
 export const addMovie = createAsyncThunk(
   "movies/addMovie",
   async (newMovie) => {
-    return axios
-      .post("http://localhost:4000/movies", newMovie)
-      .then((res) => res.data);
+    axios.post("http://localhost:4000/movies", newMovie);
+    return newMovie;
+  }
+);
+
+export const deleteMovie = createAsyncThunk(
+  "movies/deleteMovie",
+  async (id) => {
+    axios.delete(`http://localhost:4000/movies/${id}`);
+    return id;
   }
 );
 
@@ -26,6 +33,9 @@ export const moviesSlice = createSlice({
     },
     [addMovie.fulfilled]: (state, action) => {
       state.movies.push(action.payload);
+    },
+    [deleteMovie.fulfilled]: (state, action) => {
+      state.movies = state.movies.filter((m) => m.id !== action.payload);
     },
   },
 });
