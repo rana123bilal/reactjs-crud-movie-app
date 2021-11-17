@@ -21,6 +21,14 @@ export const deleteMovie = createAsyncThunk(
   }
 );
 
+export const updateMovie = createAsyncThunk(
+  "movies/updateMovie",
+  async (updatedMovie) => {
+    axios.put(`http://localhost:4000/movies/${updatedMovie.id}`, updatedMovie);
+    return updatedMovie;
+  }
+);
+
 export const moviesSlice = createSlice({
   name: "movies",
   initialState: {
@@ -36,6 +44,11 @@ export const moviesSlice = createSlice({
     },
     [deleteMovie.fulfilled]: (state, action) => {
       state.movies = state.movies.filter((m) => m.id !== action.payload);
+    },
+    [updateMovie.fulfilled]: (state, action) => {
+      state.movies = state.movies.map((m) =>
+        m.id === action.payload.id ? action.payload : m
+      );
     },
   },
 });
