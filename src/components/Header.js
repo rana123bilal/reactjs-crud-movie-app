@@ -12,7 +12,7 @@ import {
 } from "reactstrap";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ setSearchQuery }) => {
   return (
     <Navbar color="dark" expand="md" dark container>
       <NavbarBrand tag={Link} to="/">
@@ -33,7 +33,11 @@ const Header = () => {
           </NavItem>
         </Nav>
         <Form onSubmit={(e) => e.preventDefault()}>
-          <Input type="search" placeholder="Film ara" />
+          <Input
+            type="search"
+            placeholder="Film ara"
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
         </Form>
       </Collapse>
     </Navbar>

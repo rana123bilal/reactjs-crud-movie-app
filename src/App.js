@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import { Row, Col, Container } from "reactstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -9,9 +9,11 @@ import Admin from "./components/Admin";
 import AddMovie from "./components/AddMovie";
 
 const App = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+
   return (
     <Router>
-      <Header />
+      <Header setSearchQuery={setSearchQuery} />
       <Container className="mt-3">
         <Routes>
           <Route
@@ -22,13 +24,13 @@ const App = () => {
                   <CategoryList />
                 </Col>
                 <Col md="9">
-                  <MovieList />
+                  <MovieList searchQuery={searchQuery}/>
                 </Col>
               </Row>
             }
           />
           <Route path={"/details/:id"} element={<MovieDetails />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin" element={<Admin searchQuery={searchQuery}/>} />
           <Route path="/addmovie" element={<AddMovie />} />
         </Routes>
       </Container>

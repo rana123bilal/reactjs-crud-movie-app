@@ -5,7 +5,7 @@ import { fetchMovies } from "../features/moviesSlice";
 import { Link } from "react-router-dom";
 import AdminMovie from "./AdminMovie";
 
-const Admin = () => {
+const Admin = ({ searchQuery }) => {
   const movies = useSelector((state) => state.movies.movies);
 
   const dispatch = useDispatch();
@@ -31,9 +31,13 @@ const Admin = () => {
           </tr>
         </thead>
         <tbody>
-          {movies.map((m, i) => (
-            <AdminMovie movie={m} key={i} />
-          ))}
+          {movies
+            .filter((m) =>
+              m.name.toLowerCase().includes(searchQuery.toLowerCase())
+            )
+            .map((m, i) => (
+              <AdminMovie movie={m} key={i} />
+            ))}
         </tbody>
       </Table>
     </>
