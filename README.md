@@ -13,12 +13,12 @@ Go to the project directory.
 cd react-redux-toolkit-movie-app
 ```
 
-Install dependencies. Make sure you already have [`nodejs`](https://nodejs.org/en/) & [`npm`](https://www.npmjs.com/) installed in your system.
+Install dependencies. Make sure you already have <a href="https://nodejs.org/en/" target="_blank">`nodejs`</a> & <a href="https://www.npmjs.com/" target="_blank">`npm`</a> installed in your system.
 ```bash
 npm install
 ```
 
-Run the server. Make sure you already have [`json-server`](https://www.npmjs.com/package/json-server) installed in your system.
+Run the server. Make sure you already have <a href="https://www.npmjs.com/package/json-server" target="_blank">`json-server`</a> installed in your system.
 ```bash
 npm run server
 ```
@@ -27,7 +27,6 @@ Run the app
 ```bash
 npm start
 ```
-
 ---
 
 ![movie-app-screenshot](https://user-images.githubusercontent.com/67144252/143582794-6387272b-60e1-4015-8bef-eb36e9ff1f24.png)
