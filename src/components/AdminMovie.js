@@ -21,7 +21,7 @@ const AdminMovie = ({ movie }) => {
         </td>
         <td>
           <Button color="success" onClick={toggle}>
-            Güncelle
+            Edit
           </Button>
         </td>
         <td>
@@ -29,12 +29,12 @@ const AdminMovie = ({ movie }) => {
             color="danger"
             onClick={() => dispatch(deleteMovie(movie.id))}
           >
-            Sil
+            Delete
           </Button>
         </td>
       </tr>
       <Modal toggle={toggle} isOpen={modal}>
-        <ModalHeader toggle={toggle}>Film Güncelle</ModalHeader>
+        <ModalHeader toggle={toggle}>Edit Film</ModalHeader>
         <ModalBody>
           <UpdateMovie movie={movie} toggle={toggle} />
         </ModalBody>

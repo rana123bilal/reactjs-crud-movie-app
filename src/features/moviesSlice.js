@@ -2,21 +2,21 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const fetchMovies = createAsyncThunk("movies/fetchMovies", async () => {
-  return axios.get("http://localhost:4000/movies").then((res) => res.data);
+  return axios.get("http://localhost:3001/movies").then((res) => res.data);
 });
 
 export const addMovie = createAsyncThunk(
   "movies/addMovie",
   async (newMovie) => {
-    axios.post("http://localhost:4000/movies", newMovie);
-    return newMovie;
+    const response = await axios.post("http://localhost:3001/movies", newMovie);
+    return response.data;
   }
 );
 
 export const deleteMovie = createAsyncThunk(
   "movies/deleteMovie",
   async (id) => {
-    axios.delete(`http://localhost:4000/movies/${id}`);
+    axios.delete(`http://localhost:3001/movies/${id}`);
     return id;
   }
 );
@@ -24,7 +24,7 @@ export const deleteMovie = createAsyncThunk(
 export const updateMovie = createAsyncThunk(
   "movies/updateMovie",
   async (updatedMovie) => {
-    axios.put(`http://localhost:4000/movies/${updatedMovie.id}`, updatedMovie);
+    axios.put(`http://localhost:3001/movies/${updatedMovie.id}`, updatedMovie);
     return updatedMovie;
   }
 );

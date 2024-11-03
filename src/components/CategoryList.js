@@ -22,7 +22,7 @@ const CategoryList = () => {
         action
         tag="a"
       >
-        Tüm Kategoriler
+        All Categories
       </ListGroupItem>
       {categories.map((c, i) => (
         <ListGroupItem

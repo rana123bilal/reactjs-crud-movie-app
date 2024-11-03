@@ -23,7 +23,7 @@ const Header = ({ setSearchQuery }) => {
         <Nav className="me-auto" navbar>
           <NavItem>
             <NavLink tag={Link} to="/">
-              Anasayfa
+              All Movies
             </NavLink>
           </NavItem>
           <NavItem>
@@ -35,7 +35,7 @@ const Header = ({ setSearchQuery }) => {
         <Form onSubmit={(e) => e.preventDefault()}>
           <Input
             type="search"
-            placeholder="Film ara"
+            placeholder="Search Movies"
             onChange={(e) => setSearchQuery(e.target.value)}
           />
         </Form>

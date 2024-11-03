@@ -5,7 +5,7 @@ export const fetchCategories = createAsyncThunk(
   "categories/fetchCategories",
   async () => {
     return axios
-      .get("http://localhost:4000/categories")
+      .get("http://localhost:3001/categories")
       .then((res) => res.data);
   }
 );

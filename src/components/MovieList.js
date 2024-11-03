@@ -20,9 +20,13 @@ const MovieList = ({ searchQuery }) => {
     <Row>
       {movies
         .filter((m) =>
-          selectedCategory.id ? m.categoryId === selectedCategory.id : m
+          selectedCategory.id
+            ? m.categoryId?.toString() === selectedCategory.id.toString()
+            : true
         )
-        .filter((m) => m.name.toLowerCase().includes(searchQuery.toLowerCase()))
+        .filter((m) =>
+          m.name.toLowerCase().includes(searchQuery.toLowerCase())
+        )
         .map((m, i) => (
           <Col md="4" className="mb-3" key={i}>
             <Movie movie={m} />

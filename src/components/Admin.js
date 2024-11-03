@@ -17,7 +17,7 @@ const Admin = ({ searchQuery }) => {
   return (
     <>
       <Button tag={Link} to="/addmovie" color="primary" className="mb-3">
-        Film Ekle
+        Add Movie
       </Button>
       <Table bordered striped>
         <thead>

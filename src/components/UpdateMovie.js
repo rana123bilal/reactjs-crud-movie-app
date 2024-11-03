@@ -67,7 +67,7 @@ const UpdateMovie = ({ movie, toggle }) => {
         />
       </FormGroup>
       <Button type="submit" color="success" onClick={toggle}>
-        Güncelle
+        Edit
       </Button>
     </Form>
   );
