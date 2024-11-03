@@ -10,10 +10,9 @@
     {
       "id": "2",
       "name": "Five Feet Apart",
-      "categoryId": 3,
       "rating": "8.4",
       "imageUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/kreTuJBkUjVWePRfhHZuYfhNE1T.jpg",
-      "overview": "Two teenagers with cystic fibrosis meet in a hospital and fall in love, but their disease means they must avoid close physical contact."
+      "overview": "Two teenagers with cystic fibrosis meet in a hospital and fall in love, but their disease means they must avoid close physical contactsss."
     },
     {
       "id": "3",
@@ -42,10 +41,10 @@
     {
       "id": "6",
       "name": "Rick and Morty",
-      "categoryId": 2,
       "rating": "8.2",
       "imageUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8kOWDBK6XlPUzckuHDo3wwVRFwt.jpg",
-      "overview": "An animated series that follows the exploits of a super scientist and his not-so-bright grandson as they explore the universe."
+      "overview": "An animated series that follows the exploits of a super scientist and his not-so-bright grandson as they explore the universe.",
+      "categoryId": "3"
     },
     {
       "id": "7",
@@ -66,10 +65,10 @@
     {
       "id": "9",
       "name": "Outside the Wire",
-      "categoryId": 4,
       "rating": "6.4",
       "imageUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/g3JsScc7mQCfc3e5e5rXwu7xVVP.jpg",
-      "overview": "In the near future, a drone pilot is sent into a deadly militarized zone and must work with an android officer to locate a doomsday device."
+      "overview": "In the near future, a drone pilot is sent into a deadly militarized zone and must work with an android officer to locate a doomsday device.",
+      "categoryId": "5"
     },
     {
       "id": "10",
@@ -88,27 +87,12 @@
       "imageUrl": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xBdP9Z0oVAx25tM2gUOtq298jxR.jpg"
     },
     {
-      "id": "e895",
-      "name": "Ali Raza",
-      "rating": "2",
-      "imageUrl": "https://m.media-amazon.com/images/M/MV5BYTRiOWJlMmQtNjdkNS00MzUzLTgyZjYtNGVkZjFhOTcxZmQ5XkEyXkFqcGc@._V1_QL75_UX480_.jpg",
-      "overview": "ssdff"
-    },
-    {
-      "id": "7537",
-      "name": "Electronics",
-      "rating": "5",
-      "imageUrl": "https://m.media-amazon.com/images/M/MV5BYTRiOWJlMmQtNjdkNS00MzUzLTgyZjYtNGVkZjFhOTcxZmQ5XkEyXkFqcGc@._V1_QL75_UX480_.jpg",
-      "overview": "wwdd",
-      "categoryId": "1"
-    },
-    {
-      "id": "2dbc",
-      "name": "Dummy",
-      "rating": "7",
-      "imageUrl": "https://m.media-amazon.com/images/M/MV5BYTRiOWJlMmQtNjdkNS00MzUzLTgyZjYtNGVkZjFhOTcxZmQ5XkEyXkFqcGc@._V1_QL75_UX480_.jpg",
-      "overview": "wws",
-      "categoryId": "2"
+      "id": "61de",
+      "name": "Wednesday",
+      "rating": "8.9",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BNzBmNTNkOWYtNzYxZS00YjBhLTkxNTktZmM4Y2E0ZTBmZWZiXkEyXkFqcGc@._V1_.jpg",
+      "overview": "Wednesday: Created by Alfred Gough, Miles Millar. With Jenna Ortega, Hunter Doohan, Emma Myers, Joy Sunday. Follows Wednesday Addams' years as a student, ...\n",
+      "categoryId": "3"
     }
   ],
   "categories": [

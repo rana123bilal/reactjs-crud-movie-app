@@ -1,27 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Form, FormGroup, Label, Input, Button } from "reactstrap";
 import { updateMovie } from "../features/moviesSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCategories } from "../features/categoriesSlice";
 
 const UpdateMovie = ({ movie, toggle }) => {
+  const dispatch = useDispatch();
+  const { categories, isLoading: categoriesLoading, error } = useSelector(
+    (state) => state.categories
+  );
+
   const [updatedMovie, setUpdatedMovie] = useState({
     id: movie.id,
     name: movie.name,
     rating: movie.rating,
     imageUrl: movie.imageUrl,
     overview: movie.overview,
+    categoryId: movie.categoryId ? movie.categoryId.toString() : "",
   });
 
-  const dispatch = useDispatch();
+  useEffect(() => {
+    if (categories.length === 0) {
+      dispatch(fetchCategories());
+    }
+  }, [dispatch, categories.length]);
 
   const handleChange = (e) => {
-    setUpdatedMovie({ ...updatedMovie, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setUpdatedMovie({ ...updatedMovie, [name]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(updateMovie(updatedMovie));
+    toggle(); // Close the modal or update the UI accordingly
   };
+
+  if (categoriesLoading) {
+    return <div>Loading categories...</div>;
+  }
+
+  if (error) {
+    return <div>Error loading categories: {error}</div>;
+  }
 
   return (
     <Form onSubmit={handleSubmit}>
@@ -66,7 +87,25 @@ const UpdateMovie = ({ movie, toggle }) => {
           onChange={handleChange}
         />
       </FormGroup>
-      <Button type="submit" color="success" onClick={toggle}>
+      {/* New Category Select Field */}
+      <FormGroup>
+        <Label for="categorySelect">Category</Label>
+        <Input
+          id="categorySelect"
+          name="categoryId"
+          type="select"
+          value={updatedMovie.categoryId}
+          onChange={handleChange}
+        >
+          <option value="">Select a category</option>
+          {categories.map((category) => (
+            <option key={category.id} value={category.id}>
+              {category.categoryName}
+            </option>
+          ))}
+        </Input>
+      </FormGroup>
+      <Button type="submit" color="success">
         Edit
       </Button>
     </Form>

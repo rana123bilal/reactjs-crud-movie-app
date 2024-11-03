@@ -24,8 +24,11 @@ export const deleteMovie = createAsyncThunk(
 export const updateMovie = createAsyncThunk(
   "movies/updateMovie",
   async (updatedMovie) => {
-    axios.put(`http://localhost:3001/movies/${updatedMovie.id}`, updatedMovie);
-    return updatedMovie;
+    const response = await axios.put(
+      `http://localhost:3001/movies/${updatedMovie.id}`,
+      updatedMovie
+    );
+    return response.data;
   }
 );
 

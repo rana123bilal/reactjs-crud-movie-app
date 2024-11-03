@@ -16,7 +16,7 @@ const Header = ({ setSearchQuery }) => {
   return (
     <Navbar color="dark" expand="md" dark container>
       <NavbarBrand tag={Link} to="/">
-        MovieApp
+        Media CMS App
       </NavbarBrand>
       <NavbarToggler onClick={function noRefCheck() {}} />
       <Collapse navbar>
